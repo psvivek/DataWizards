@@ -1,0 +1,256 @@
+<!-- {% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %} -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<link href="www.randomlink.com/static/favicon.ico" rel="icon" type="image/x-icon">
+<head>
+<title>Homepage</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style>
+  body{
+  font-family: 'Lato', sans-serif;
+}
+
+@keyframes animationName {
+from {margin-left:-20%; opacity: 0.5;}
+}
+
+#wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#wrapper1{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#wrapper2{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper{
+  position: relative;
+}
+
+a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+a:hover{
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+a:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+.splash {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('https://images.pexels.com/photos/395198/pexels-photo-395198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: absolute;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 100%;
+    margin: auto;
+    max-height: 1600px;
+    max-width: 900px;
+    position: absolute;
+    width: 100%;
+}
+
+</style>
+
+<!-- <div class="splash"></div> -->
+
+</head>
+<body class="splash">
+  <div id="wrapper">
+    <div class="link_wrapper">
+      <a onclick="myFunction()">Financial Technology (FinTech)</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="link_wrapper">
+      <a onclick="myFunction()">Consumer Goods and Services</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+    <div class="link_wrapper">
+      <a onclick="myFunction()">Healthcare</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- -------------------------------------------------------------- -->
+
+  <div id="wrapper1" hidden>
+    <div class="link_wrapper">
+      <a onclick="myFunction1()">Project A</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="link_wrapper">
+      <a onclick="myFunction1()">Project B</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+    <div class="link_wrapper">
+      <a onclick="myFunction1()">Project C</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- ------------------------------------------------------------------------------------- -->
+
+  <div id="wrapper2" hidden>
+    <div class="link_wrapper">
+      <a href="summary" onclick="myFunction2()">Wearable Technology</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="link_wrapper">
+      <a href="summary" onclick="myFunction2()">Fenceless Farming</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+    <div class="link_wrapper">
+      <a href="summary" onclick="myFunction2()">Monitoring of livestock</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+<script type="text/javascript">
+
+  function myFunction() {
+    // alert('Hi');
+    document.getElementById("wrapper").style.display = "none";
+    document.getElementById("wrapper1").removeAttribute("hidden");
+    document.getElementById("wrapper").style.animation = "animationName 1s linear 1";
+    document.getElementById("wrapper1").style.animation = "animationName 1s linear 1";
+
+  }
+
+  function myFunction1() {
+
+    document.getElementById("wrapper1").style.display = "none";
+    document.getElementById("wrapper2").removeAttribute("hidden");
+    document.getElementById("wrapper1").style.animation = "animationName 1s linear 1";
+    document.getElementById("wrapper2").style.animation = "animationName 1s linear 1";
+
+  }
+
+</script>
+
+</html>
+{% endblock %}

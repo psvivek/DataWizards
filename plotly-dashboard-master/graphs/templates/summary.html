@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{block.super}}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-center">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">INVESTOR DASHBOARD</a>
+      </nav>
+<!-- /.container -->
+
+<div class="card" style="width: 100%;margin-top: 15px">
+
+  <div class="card-body">
+      <h5 class="card-title">Summary</h5>
+    {{model|safe}}
+  </div>
+</div>
+<!-- /.container -->
+
+<div class="card" style="width: 100%;margin-top: 15px">
+
+  <div class="card-body">
+      <h5 class="card-title">Wearable Technology Sentiment Analysis</h5>
+    {{plot|safe}}
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class='tableauPlaceholder' style='width: 1000px; height: 827px;'><object class='tableauViz' width='1000' height='827' style='display:none;'><param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;equicrowd' /><param name='name' value='InvestorDashboard&#47;INVESTORDASHBOARD' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+
+
+</div>
+{% endblock %}
